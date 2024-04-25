@@ -1,7 +1,7 @@
 {
   "name": "@bonnieetc/topsis",
   "version": "1.0.0",
-  "description": "This is an implementation of TOPSIS algorithm for multi-criteria decision-making and prescriptive analytics.",
+  "description": "Fork of Patelo's TOPSIS implementation.",
   "main": "index.js",
   "scripts": {
     "test": "jest",
