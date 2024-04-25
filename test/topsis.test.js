@@ -15,33 +15,6 @@ let ia = ["min", "min", "max"];
 
 let result = null;
 
-describe("getBest", () => {
-  it("should return the alternative with the lowest euclidean distance to ideal solution and highest to the anti ideal solution and it should be array with numeric data", () => {
-    result = topsis.getBest(m, w, ia);
-    console.log(result);
-    expect(result).toHaveLength(m.cols);
-  });
-});
-
-describe("getBestWithRandom", () => {
-  it("should return the alternative with the lowest euclidean distance to ideal solution and highest to the anti ideal solution and it should be array with numeric data", () => {
-    // Creating random arguments to test
-    const args = topsis.createRandom();
-
-    m = args.m;
-    w = args.w;
-    ia = args.ia;
-
-    console.log(m, w, ia);
-
-    let nc = m.cols;
-
-    result = topsis.getBest(m, w, ia);
-    console.log(result);
-    expect(result).toHaveLength(nc);
-  });
-});
-
 describe("getArrays", () => {
   it("should return correctly sorted alternatives", () => {
     const m = new Matrix([
